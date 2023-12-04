@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+#word-display {
+    margin: 40px 0;
+    font-size: 48px;
+}
+
+#keyboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    aspect-ratio: 1/1;
+    font-size: 48px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: cadetblue;
+    color: white;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.play {
+    margin: 20px 0;
+    cursor: pointer;
+    padding: .5em 1em;
+    font-size: 24px;
+    color: cadetblue;
+    border: 1px solid cadetblue;
+    border-radius: 5px;
+}
+
+.play:hover {
+    background-color: cadetblue;
+    color: white;
+}
+
+.wrong {
+    background-color: red;
+    color: #fff;
+    cursor: default;
+}
+
+.correct {
+    background-color: green;
+    color: #fff;
+    cursor: default;
+}
+
+.win {
+    color: green;
+}
+
+.lose {
+    color: red;
+}
