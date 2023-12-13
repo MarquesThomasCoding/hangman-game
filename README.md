@@ -1,7 +1,8 @@
 # hangman-game
+Projet personnel
 
 ### Description :
-Petit jeu du pendu en anglais
+Jeu du pendu en anglais
 
 ### Technologies :
 * HTML
