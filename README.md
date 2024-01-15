@@ -1,4 +1,4 @@
-# hangman-game
+# Hangman Game
 Projet personnel
 
 ### Description :
