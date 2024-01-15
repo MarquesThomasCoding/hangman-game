@@ -1,0 +1,32 @@
+@import url('./hangman.css');
+@import url('./word.css');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+h1 {
+    color: #333;
+    grid-column: 1 / -1;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+@media screen and (max-width: 650px) {
+    body {
+        grid-template-columns: 1fr;
+    }
+}
