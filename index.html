@@ -10,11 +10,34 @@
 
   <h1>Hangman game</h1>
 
-  <div id="word-display"></div>
-  <div class="message"></div>
-  <div id="keyboard" class="hidden"></div>
-  <div id="wrong-letters"></div>
-  <button class="play" onclick="startGame()">Play</button>
+  <section class="word">
+    <div id="word-display"></div>
+    <div class="message"></div>
+    <div id="keyboard" class="hidden"></div>
+    <div id="wrong-letters"></div>
+    <button class="play" onclick="startGame()">Play</button>
+  </section>
+
+  <section class="hangman">
+    <div class="hangman-container">
+      <div class="base-container">
+        <div class="base hidden" id="show-1"></div>
+        <div class="stick hidden" id="show-2"></div>
+        <div class="stick-top hidden" id="show-3"></div>
+        <div class="rope hidden" id="show-4"></div>
+      </div>
+      <div class="figure-container">
+        <div class="figure">
+          <div class="head hidden" id="show-5"></div>
+          <div class="body hidden" id="show-6"></div>
+          <div class="left-arm hidden" id="show-7"></div>
+          <div class="right-arm hidden" id="show-8"></div>
+          <div class="left-leg hidden" id="show-9"></div>
+          <div class="right-leg hidden" id="show-10"></div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <script src="script.js"></script>
 </body>

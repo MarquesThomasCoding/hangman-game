@@ -31,6 +31,12 @@ function startGame() {
     wrongLetters = [];
     wrongAttempts = 0;
 
+    // Réinitialiser les parties du pendu
+    for (let i = 1; i <= 10; i++) {
+        let figurePart = document.getElementById("show-" + i);
+        figurePart.classList.add("hidden");
+    }
+
     // Afficher le clavier
     displayKeyboard();
 }
@@ -71,6 +77,9 @@ function guessLetter(letter, button) {
         button.classList.add("wrong");
         wrongLetters.push(letter);
         wrongAttempts++;
+
+        let figurePart = document.getElementById("show-" + wrongAttempts);
+        figurePart.classList.remove("hidden");
   
         // Vérifier le nombre d'essais infructueux
         if (wrongAttempts === maxWrongAttempts) {

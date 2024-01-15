@@ -1,0 +1,133 @@
+.hangman {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 220px;
+    border: 3px dotted black;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 650px) {
+    .hangman {
+        grid-row: 2;
+    }
+}
+
+.hangman-container {
+    height: 200px;
+    width: 100px;
+    position: relative;
+}
+
+.base-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100px;
+    height: 200px;
+}
+
+.base {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100px;
+    height: 3px;
+    background-color: black;
+}
+
+.stick {
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+    width: 3px;
+    height: 200px;
+    background-color: black;
+}
+
+.stick-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 130px;
+    height: 3px;
+    background-color: black;
+}
+
+.rope {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 3px;
+    height: 30px;
+    background-color: black;
+}
+
+
+.figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 30px;
+    left: 75%;
+}
+
+.head {
+    width: 50px;
+    height: 50px;
+    border: 3px solid black;
+    border-radius: 50%;
+}
+
+.body {
+    width: 3px;
+    height: 80px;
+    background-color: black;
+}
+
+.left-arm {
+    position: absolute;
+    top: 50px;
+    width: 2px;
+    height: 30px;
+    background-color: black;
+    transform: rotate(45deg);
+    transform-origin: top left;
+}
+
+.right-arm {
+    position: absolute;
+    top: 50px;
+    width: 2px;
+    height: 30px;
+    background-color: black;
+    transform: rotate(-45deg);
+    transform-origin: top right;
+}
+
+.left-leg {
+    position: absolute;
+    top: 128px;
+    width: 2px;
+    height: 30px;
+    background-color: black;
+    transform: rotate(45deg);
+    transform-origin: top left;
+}
+
+.right-leg {
+    position: absolute;
+    top: 128px;
+    width: 2px;
+    height: 30px;
+    background-color: black;
+    transform: rotate(-45deg);
+    transform-origin: top right;
+}
